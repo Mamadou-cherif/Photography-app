@@ -17,7 +17,6 @@ const routes: Routes = [
   {path: "client", component: ClientsComponent},
   {path: "pricing", component:PricingComponent},
   {path: "intro", component: IntroComponent},
-  { path: '',   redirectTo: '/header', pathMatch: 'full' },
 
 ];
 
