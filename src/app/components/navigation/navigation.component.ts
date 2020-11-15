@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵConsole } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -10,10 +10,17 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+   this.forScroll()
   }
 
   forScroll() {
-    window.scrollTo(0, 900);
-  
-  }
+    // b: window.screen.height;
+    var a= document.body.scrollHeight
+    
+    
+   
+   window.scrollTo(0, a);
+ 
+   
+   }
 }
